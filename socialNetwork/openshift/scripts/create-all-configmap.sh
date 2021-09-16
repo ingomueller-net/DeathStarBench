@@ -3,6 +3,7 @@
 cd $(dirname $0)/..
 
 ./scripts/configmaps/create-jaeger-configmap.sh
+./scripts/configmaps/create-services-configmap.sh
 ./scripts/configmaps/create-media-frontend-configmap.sh
 ./scripts/configmaps/create-nginx-thrift-configmap.sh
 
