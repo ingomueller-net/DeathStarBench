@@ -19,7 +19,7 @@ oc create cm nginx-thrift-luascripts-wrk2-api-user-timeline --from-file=nginx-th
 
 # file
 
-oc create cm nginx-thrift        --from-file=nginx-thrift-config/nginx.conf     -n ${NS}    --dry-run --save-config -o yaml | oc apply -f - -n ${NS}
+oc create cm nginx-thrift        --from-file=nginx-thrift-config/conf/nginx.conf     -n ${NS}    --dry-run --save-config -o yaml | oc apply -f - -n ${NS}
 
 # nginx-thrift has a dependency on the ConfigMap nginx-thrift-jaeger, which
 # is created by the script `create-jaeger-configmap.sh`

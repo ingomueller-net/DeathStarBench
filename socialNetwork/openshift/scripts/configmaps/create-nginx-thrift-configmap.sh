@@ -21,7 +21,7 @@ oc create cm nginx-thrift-luascripts-wrk2-api-user --from-file=nginx-thrift-conf
 oc create cm nginx-thrift-luascripts-wrk2-api-user-timeline --from-file=nginx-thrift-config/lua-scripts/wrk2-api/user-timeline -n ${NS}
 
 # file
-oc create cm nginx-thrift        --from-file=nginx-thrift-config/nginx.conf -n ${NS}
+oc create cm nginx-thrift        --from-file=nginx-thrift-config/conf/nginx.conf -n ${NS}
 
 
 # nginx-thrift has a dependency on the ConfigMap nginx-thrift-jaeger, which
